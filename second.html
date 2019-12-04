@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>小凌的博客</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.7.0/marked.js"></script>
+  <link rel="stylesheet" href="./typo.css">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+   body{padding:16px;}
+   img{
+    max-width:100%;
+   }
+  </style>
+</head>
+<body>
+  <div id="content">
+# 我的第二篇博客
 
+**小凌**
+    
+__相信网上的名人名言都是我写的。——鲁迅__
+
+大家好我今天见到鲁迅了。
+
+<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1072406476,383999741&fm=26&gp=0.jpg">
+  </div>
+<script>
+var content=document.getElementById("content");
+var markdown=content.innerHTML
+console.log(markdown);
+<!-- console.log(markdown); -->
+  var html=marked(markdown)
+  content.innerHTML=html
+  </script>
+</body>
+</html>
